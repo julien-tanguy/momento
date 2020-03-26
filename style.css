@@ -1,0 +1,102 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    background-color: black;
+}
+#navMenu {
+    width: auto;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 40px;
+    margin-right: 40px;
+    background-color: whitesmoke;
+    border-radius: 9px;
+}
+#navMenu li {
+    list-style: none;
+    display: inline-block;
+}
+a {
+    text-decoration: none;
+    color: #4F5766;
+}
+#navMenu img {
+    width: 44px;
+    height: 44px;
+    padding-top: 3px;
+}
+.aNav {
+    padding-top: 15px;
+}
+.infoPart {
+    background-repeat: no-repeat;
+    width: 1080px;
+    height: 500px;
+    margin: 0 auto;
+    border-radius: 9px;
+    margin-bottom: 20px;
+}
+#htmlDesc {
+    color: whitesmoke;
+    padding: 60px 0px 0px 60px;
+}
+#cssDesc, #comingDesc  {
+    float: right;
+    color: whitesmoke;
+    padding: 60px 50px 0px 0px;
+}
+#gitDesc {
+    color: black;
+    padding: 60px 0px 0px 60px;
+}
+#htmlDesc, #cssDesc, #gitDesc, #comingDesc  {
+    width: 300px;
+    height: 200px;
+}
+#htmlDesc h2, #cssDesc h2, #gitDesc h2, #comingDesc h2  {
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+#htmlDesc p, #cssDesc p, #gitDesc p, #comingDesc p {
+    text-align: justify;
+}
+#htmlDesc a, #cssDesc a, #comingDesc a {
+    color: whitesmoke;
+}
+#gitDesc a {
+    color: black;
+}
+#htmlDesc a:hover, #cssDesc a:hover, #gitDesc a:hover, #comingDesc a:hover  {
+    color: #4F5766;
+}
+@media only screen and (max-width:800px) {
+    .infoPart {height: 250px;
+        width: 540px;
+        background-size: 540px 250px;
+    }
+    #htmlDesc, #gitDesc {
+        width: 150px;
+        height: 100px;
+        font-size: 11px;
+        padding: 10px 0px 0px 30px;
+    }
+    #cssDesc, #comingDesc {
+        padding: 10px 23px 0px 0px;
+        width: 150px;
+        height: 100px;
+        font-size: 11px;
+    }
+    #htmlDesc h2, #cssDesc h2, #gitDesc h2, #comingDesc h2 {
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+ }
+ /*-----------------------------------------------------autresPages---------------------------*/
+ .commonSection {
+    background-color: whitesmoke;
+    width: 1300px;
+    margin: 0 auto;
+    border-radius: 9px;
+ }
