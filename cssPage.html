@@ -8,7 +8,7 @@
     </head>
     <body>
         <ul id="navMenu">
-            <li class="logoMenu"><img src="imagesMomento/logoMenu.png" alt="nav menu logo"></li>
+            <li class="logoMenu"><img src="imagesMomento/logoMenu.png" alt="nav menu logo" /></li>
             <li class="aNav"><a href="htmlPage.html" title="liens vers html">html</a></li>
             <li class="aNav"><a href="#" title="liens vers css">css</a></li>
             <li class="aNav"><a href="gitPage.html" title="liens vers github">github</a></li>
@@ -18,9 +18,26 @@
         <section class="commonSection">
             <h1>css</h1>
             <div id="commonNotes">
+                <h2>Les notes.</h2>
+                <p>La balise link met en relation une page html et une page css. Elle doit toujours etre accompagnée par les attributs type="text/css" rel="stylesheet" et href="nom fichier css". l'attibut type renseigne le navigateur sur le type de fichier, ici du css, l'attribut  rel possède une valeur stylesheet qui indique que c'est une feuille de style et href indique le chemin vers la feuille de style.</p>
+                <p>Une déclaration en css s'ecrit de la maniere suivante : h1 &#123; color: red; &#125;. ici le selecteur h1 verra sa propriété color modifier en valeur red. tout les h1 seront donc affichés en rouge sur la page.</p>
+                <p>Pour modifier plusieur type d'éléments avec une seul declaration, il s'uffit de sparer les selecteurs par une virgule. ex: h1,p &#123; color: red; &#125;. les h1 et les p seront de couleur rouge.</p>
+                <p>Pour modifier un element qui a un id, il faut que le selecteur soit # est le nom de son id. ex : #titrePrincipale &#123; color: red; &#125;. l'element qui aura pour id="titrePrincipale deviendra rouge.</p>
+                <p>Pour modifier un ou plusieurs elements elements qui ont la meme class, il faut que le selecteur soit . est le nom de son id. ex : .sousTitres &#123; color: red; &#125;. touts les elements qui auront pour class="sousTitres" deviendront rouge.</p>
+                <p>il est également possible de modifier certains élement enfants sans modifier les autres. ex : div p &#123; color: red; &#125;. ici, seul les p enfants de div seront modier en rouge.</p>
+                <p>Quelques bonne pratiques, pour mettre des éléments<em>en italique</em> et <strong>en gras</strong>, privilégier les balises &lsaquo;em&rsaquo; et &lsaquo;strong&rsaquo; dans le html plutot que d'utiliser font-weight pour être mieu compris et mieu référencé par le navigateur. les deux donneront le meme visuel mais le navigateur comprendra que &lsaquo;strong&rsaquo; et un element important dans la page.</p>
+                <p>Pour l'attribut float, privilégié left a inline start car il est baucoup plus connu par les navigateurs.</p>
+                <p>Toujours faire attention aux bordure, padding et aux marges :</p>
+                <div id="schemaMarges"><img src="imagesMomento/margin.png" alt="schema marges" /></div>
+                <p>Pour centrer facilement une div, lui donner une hauteur et une largeur et lui attribuer une margin : &#123; 0 auto; &#125;.</p>
             </div>
             <div id="commonLinks">
                 <h2>Les liens.</h2>
+                <p>Quelques liens concernant le css :
+                    <ul>
+                        <li><a title="propriété css" href="http://ekladata.com/rC0hTiexT3ZlL64k-VKYLKn3-G4/Memento-des-proprietes-CSS.pdf" target="_blank">listes de propriétés css</a></li>
+                    </ul>
+                </p>
             </div>
         </section>
 
