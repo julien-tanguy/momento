@@ -71,28 +71,7 @@ a {
 #htmlDesc a:hover, #cssDesc a:hover, #gitDesc a:hover, #comingDesc a:hover  {
     color: #4F5766;
 }
-@media only screen and (max-width:800px) {
-    .infoPart {height: 250px;
-        width: 540px;
-        background-size: 540px 250px;
-    }
-    #htmlDesc, #gitDesc {
-        width: 150px;
-        height: 100px;
-        font-size: 11px;
-        padding: 10px 0px 0px 30px;
-    }
-    #cssDesc, #comingDesc {
-        padding: 10px 23px 0px 0px;
-        width: 150px;
-        height: 100px;
-        font-size: 11px;
-    }
-    #htmlDesc h2, #cssDesc h2, #gitDesc h2, #comingDesc h2 {
-        text-transform: uppercase;
-        margin-bottom: 10px;
-    }
- }
+
  /*-----------------------------------------------------autresPages---------------------------*/
  .commonSection {
     background-color: whitesmoke;
@@ -102,9 +81,10 @@ a {
     padding-bottom: 50px;
  }
  #schemaMarges {
-     width: 500px;
-     height: 387px;
-     margin: 0 auto;
+    max-width: 100%;
+    width: 500px;
+    height: 387px;
+    margin: 0 auto 10px;
  }
  .commonSection h1 {
      margin-left:  auto;
@@ -121,20 +101,12 @@ a {
     border-bottom: 1px solid #4F5766;
     text-align: center;
     font-size: 20px;
-    width: 130px;
-    margin-left: 40px;
-    padding-bottom: 10px;
-}
- .commonSection h3 {
-    text-transform: uppercase;
-    border-bottom: 1px solid #4F5766;
+    margin-left:  auto;
+     margin-right: auto;
     width: 200px;
-    text-align: center;
-    margin-left: 40px;
-    margin-top: 30px;
     padding-bottom: 10px;
 }
-#commonNotes {
+#commonNotes, #commonLinks {
     margin-left: 60px;
     margin-right: 60px;
 }
@@ -142,17 +114,84 @@ a {
     list-style: none;
     margin-bottom: 10px;
 }
-#commonLinks {
-    margin-left: 60px;
-    margin-right: 60px;
+#commonNotes p, fieldset {
+    text-align: justify;
+    margin: 0 auto 10px;
+    width: 900px;
 }
-#commonLinks li {
-    list-style: none;
-    margin-bottom: 20px;
+.linksContent {
+    margin: 0 auto;
+    width: 900px;
+    height: 400px;
 }
-@media only screen and (max-width:800px) {
-    .commonSection {height: auto;
-        width: 540px;
-        margin-bottom: unset;
-    }
+.linkDesign {
+    text-align: center;
+    width: 33.33333%;
+    height: 200px;
+    float: left;
+}
+.linkDesign a:hover {
+    color: #4fd1d6;
+}
+.linkDesign img {
+    width: 64px;
+    height: 64px;
+}
+.linkDesign h3 {
+    font-size: 18px;
  }
+ .linkDesign p {
+    font-size: 14px;
+ }
+ fieldset {
+     border-radius: 3px;
+ }
+ .grey{
+    background-color: #dddbdb;
+    border-radius: 3px;
+ }
+/*-----------------------------------------------------@media---------------------------*/
+@media only screen and (max-width:800px) {
+    .commonSection {
+        height: auto;
+        width: 540px;
+ }
+    #commonNotes p {
+        width: 300px;
+ }
+    fieldset {
+        width: 400px;
+ }
+    .commonSection h1 {
+        width: 400px;
+ }
+    .infoPart {
+        height: 250px;
+        width: 540px;
+        background-size: 540px 250px;
+}
+    #htmlDesc, #gitDesc {
+        width: 150px;
+        height: 100px;
+        font-size: 11px;
+            padding: 10px 0px 0px 30px;
+}
+    #cssDesc, #comingDesc {
+        padding: 10px 23px 0px 0px;
+        width: 150px;
+        height: 100px;
+        font-size: 11px;
+}
+    #htmlDesc h2, #cssDesc h2, #gitDesc h2, #comingDesc h2 {
+     margin-bottom: 10px;
+}
+    .linksContent {
+        width: 400px;
+}
+    .linkDesign p, .linkDesign h3 {
+        font-size: 12px;
+}
+#commonNotes img {
+    max-width: 100%;
+}
+}

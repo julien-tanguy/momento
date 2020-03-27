@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <link type="text/css" rel="stylesheet" href="style.css" />
         <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
-        <title>Momento julien</title>
+        <title>Momento julien git</title>
     </head>
     <body>
         <ul id="navMenu">
@@ -18,73 +18,86 @@
         <section class="commonSection">
             <h1>github et terminal</h1>
             <div id="commonNotes">
-                <h2>Les notes.</h2>
-                <h3>Le terminal.</h3>
-                <p>Quelques commandes utile pour le terminal :
+                <h2>Introduction.</h2>
+                <h2>Le terminal.</h2>
+                <fieldset>
+                    <legend>Quelques commandes utile pour le terminal :</legend>
                     <ul>
                         <li>cd :
                             <ol>
-                                <li>cd / : Permet de se retrouver à la racine du disque.</li>
-                                <li>cd : accéder directement au répertoir de l'utilisateur.</li>
-                                <li>cd documents : aller dans le répertoir documents.</li>
-                                <li>cd documents/www/html : aller dans le répertoir html</li>
-                                <li> cd .. : Remonter dans le répertoire parent à partir de là où vous êtes.</li>
+                                <li><span class="grey">cd / :</span> Permet de se retrouver à la racine du disque.</li>
+                                <li><span class="grey">cd :</span> accéder directement au répertoir de l'utilisateur.</li>
+                                <li><span class="grey">cd documents :</span> aller dans le répertoir documents.</li>
+                                <li><span class="grey">cd documents/www/html :</span> aller dans le répertoir html</li>
+                                <li><span class="grey">cd .. :</span> Remonter dans le répertoire parent à partir de là où vous êtes.</li>
                             </ol>
                         </li>
                         <li>mkdir :
                             <ol>
-                                <li>mkdir "nom du fichier" : créer un fichier dans le répertoir dans lequel on se situe.</li>
-                                <li>mkdir -v : remonter des informations lors de la création d'un répertoire.</li>
+                                <li><span class="grey">mkdir "nom du fichier" :</span> créer un fichier dans le répertoir dans lequel on se situe.</li>
+                                <li><span class="grey">mkdir -v :</span> remonter des informations lors de la création d'un répertoire.</li>
                             </ol>
                         </li>
                     </ul>
-                </p>
-                <h3>Git/github.</h3>
-                <p>configurer git:
-                    <ul>
-                        <li>git config --global user.mail "ton mail"</li>
-                        <li>git cinfig --global user.name "ton nom d'utilisateur"</li>
-                    </ul>
-                </p>
-                <p>sauvegarder des fichier sur github:</p>
-                <p>Une fois dans le répertoir souhaité :
-                    <ul>
-                        <li>git init : créer un nouveau sous-répertoire nommé .git qui contient tous les fichiers envoyés. A ne faire qu'une fois par dossier.</li>
-                        <li>git add fichierExemple.html : Spécifier quels fichiers sont à sauvegarder.</li>
-                        <li>git commit -m "commentaire" : sauvegarder sur le pc les fichiers selectionnés. Toujours indiquer un commentaire qui explique les moifications apportés.</li>
-                        <li>
-                            <ol>
-                                <li>Aller sur github et créer un nouveau repository.</li>
-                                <li> Copier les lignes commencant par "...or push" git remote add origin https://github.com/julien-tanguy/momento.git
-                                    git push -u origin master</li>
-                                <li>coller ces lignes dans le terminal et validé.</li>
-                            </ol>
-                        </li>
-                        <li>git push -u origin master : Envoyer les fichiers sur la branche master sur github.</li>
-                    </ul>
-                </p>
-                <h3>Les branches.</h3>
+                </fieldset>
+                <h2>Git/github.</h2>
+                <fieldset>
+                    <legend>configurer git:</legend>
+                        <ul>
+                            <li>git config --global user.mail "ton mail"</li>
+                            <li>git cinfig --global user.name "ton nom d'utilisateur"</li>
+                        </ul>
+                    </p>
+                    <p>sauvegarder des fichier sur github:</p>
+                    <p>Une fois dans le répertoir souhaité :
+                        <ul>
+                            <li>git init : créer un nouveau sous-répertoire nommé .git qui contient tous les fichiers envoyés. <strong>A ne faire qu'une fois par dossier. </strong></li>
+                            <li>git add fichierExemple.html : Spécifier quels fichiers sont à sauvegarder.</li>
+                            <li>git commit -m "commentaire" : sauvegarder sur le pc les fichiers selectionnés. Toujours indiquer un commentaire qui explique les moifications apportés.</li>
+                            <li>
+                                <ol>
+                                    <li>Aller sur github et créer un nouveau repository.</li>
+                                    <li> Copier les lignes commencant par "...or push" git remote add origin https://github.com/julien-tanguy/momento.git
+                                        git push -u origin master</li>
+                                    <li>coller ces lignes dans le terminal et validé.</li>
+                                </ol>
+                            </li>
+                            <li>git push -u origin master : Envoyer les fichiers sur la branche master sur github.</li>
+                        </ul>
+                </fieldset>
+                <h2>Les branches.</h2>
                 <p>Lorsque vous initialisez un repo Git, votre code est placé dans la branche principale appelée master par défaut. Travailler sur plusieurs branches est très utile lorsque vous souhaitez tester une expérimentation sur votre projet, ou encore pour vous concentrer sur le développement d'une fonctionnalité spécifique.</p>
-                <p>Dés que l'on à finit avec une branche, il fautune desicion pour ne pas eparpillé son travail : la supprimer ou la fusionner avec master.</p>
-                <p>Ajouter/supprimer une branche dans le terminal.
+                <p>Dés que l'on à finit avec une branche, il fautprendre une desicion pour ne pas eparpillé son travail : la supprimer ou la fusionner avec master.</p>
+                <fieldset>
+                    <legend>Ajouter/supprimer une branche dans le terminal.</legend>
                     <ul>
-                        <li>git branch exemple : créer une nouvelle brancge qui a pour nom exemple.</li>
-                        <li>git checkout exemple : basculer sur la branche exemple.</li>
-                        <li>git merge exemple : fusionner la branche exemple avec la branche master.</li>
-                        <li>git branch -d exemple : supprimer la branche exemple.</li>
+                        <li><span class="grey">git branch exemple :</span> créer une nouvelle brancge qui a pour nom exemple.</li>
+                        <li><span class="grey">git checkout exemple :</span> basculer sur la branche exemple.</li>
+                        <li><span class="grey">git merge exemple :</span> fusionner la branche exemple avec la branche master.</li>
+                        <li><span class="grey">git branch -d exemple :</span> supprimer la branche exemple.</li>
                     </ul>
-                </p>
+                </fieldset>
                 <p><strong>Attention</strong> fusionner une branche ne la supprime pas.</p>
             </div>
             <div id="commonLinks">
                 <h2>Les liens.</h2>
-                <p>Quelques liens utiles concernant git et le terminal :
-                    <ul>
-                        <li><a title="the simple guide" href="http://rogerdudler.github.io/git-guide/index.html" target="_blank">Git - The simple guide (anglais)</a></li>
-                        <li><a title="commandes linux" href="https://juliend.github.io/linux-cheatsheet/" target="_blank">Linux - commandes fondamentales</a></li>
-                        <li><a title="les bases de git" href="https://git.goffinet.org/02-les-bases-de-git.html" target="_blank">les bases de git</a></li>
-                    </ul>
-                </p>
+                <div class="linksContent">
+                    <div class="linkDesign">
+                        <img alt="mdn logo" src="imagesMomento/GitLogo.png" />
+                        <h3><a title="the simple guide" href="http://rogerdudler.github.io/git-guide/index.html" target="_blank">The simple guide (anglais)</a></h3>
+                        <p>Site presentant les principales commandes de git.</p>
+                    </div>
+                    <div class="linkDesign">
+                        <img alt="openc logo" src="imagesMomento/terminal.png" />
+                        <h3><a title="commandes linux" href="https://juliend.github.io/linux-cheatsheet/" target="_blank">commandes terminal</a></h3>
+                        <p>Site presentant les principales commandes de terminal linux.</p>
+                    </div>
+                    <div class="linkDesign">
+                        <img alt="cara logo" src="imagesMomento/GitLogo.png" />
+                        <h3><a title="les bases de git" href="https://git.goffinet.org/02-les-bases-de-git.html" target="_blank">les bases de git</a></h3>
+                        <p>Site presentant les commandes de bases de git.</p>
+                    </div>
+                </div>
             </div>
         </section>
     </body>
