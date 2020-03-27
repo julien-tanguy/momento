@@ -137,7 +137,8 @@ a {
     width: 64px;
     height: 64px;
 }
-.linkDesign h3 {
+h3 {
+    text-align: center;
     font-size: 18px;
  }
  .linkDesign p {

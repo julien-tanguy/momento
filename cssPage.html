@@ -20,6 +20,7 @@
             <div id="commonNotes">
                 <h2>Introduction.</h2>
                 <p>CSS (Cascading Style Sheets ou en français "Feuilles de style en cascade") est utilisé pour styliser et mettre en page des pages Web - par exemple, pour modifier la police, la couleur, la taille et l'espacement de votre contenu, le scinder en plusieurs colonnes ou ajouter des animations et autres éléments décoratifs. Ce module vous permet de commencer en douceur votre chemin vers la maîtrise de CSS avec les bases de son fonctionnement, de sa syntaxe et de la façon dont vous pouvez commencer à l'utiliser pour ajouter du style au HTML.</p>
+                <h2>syntaxe</h2>
                 <p>La balise link met en relation une page html et une page css. Elle doit toujours etre accompagnée par les attributs type="text/css" rel="stylesheet" et href="nom fichier css". l'attibut type renseigne le navigateur sur le type de fichier, ici du css, l'attribut  rel possède une valeur stylesheet qui indique que c'est une feuille de style et href indique le chemin vers la feuille de style.</p>
                 <p>Une déclaration en css s'ecrit de la maniere suivante : h1 &#123; color: red; &#125;. ici le selecteur h1 verra sa propriété color modifier en valeur red. tout les h1 seront donc affichés en rouge sur la page.</p>
                 <p>Pour modifier plusieur type d'éléments avec une seul declaration, il s'uffit de sparer les selecteurs par une virgule. ex: h1,p &#123; color: red; &#125;. les h1 et les p seront de couleur rouge.</p>
@@ -28,9 +29,20 @@
                 <p>il est également possible de modifier certains élement enfants sans modifier les autres. ex : div p &#123; color: red; &#125;. ici, seul les p enfants de div seront modier en rouge.</p>
                 <p>Quelques bonne pratiques, pour mettre des éléments<em>en italique</em> et <strong>en gras</strong>, privilégier les balises &lsaquo;em&rsaquo; et &lsaquo;strong&rsaquo; dans le html plutot que d'utiliser font-weight pour être mieu compris et mieu référencé par le navigateur. les deux donneront le meme visuel mais le navigateur comprendra que &lsaquo;strong&rsaquo; et un element important dans la page.</p>
                 <p>Pour l'attribut float, privilégié left a inline start car il est baucoup plus connu par les navigateurs.</p>
-                <p>Toujours faire attention aux bordure, padding et aux marges :</p>
+                <p>Toujours faire attention aux bordure, padding et aux marges.</p>
                 <p>Pour centrer facilement une div, lui donner une hauteur et une largeur et lui attribuer une margin : &#123; 0 auto; &#125;.</p>
                 <div id="schemaMarges"><img src="imagesMomento/margin.png" alt="schema marges" /></div>
+                <h2>reset css</h2>
+                <p>Le reset CSS est une technique qui consiste à réinitialiser à 0 la valeur de certains éléments HTML afin d'éviter une partie des différences d'affichage sur les divers navigateurs. Avant d'aller plus loin, rappelons que l'usage de cette technique est controversé.</p>
+                <p>Voici le Reset CSS classique : &lsaquo;margin: 0; padding: 0;&rsaquo; ou plus poussé : &lsaquo;margin: 0; padding: 0; border: 0; font-family: sans-serif; font-size: 1em; font-weight: normal; font-style: normal; text-decoration: none; &rsaquo; <strong>A NE PAS FAIRE</strong></p>
+                <p>Le problème de cette technique, c'est qu'elle annule certains styles par défaut des navigateurs qui sont réellement utiles. Le cas le plus flagrant est celui des éléments de formulaire.</p>
+                <p>On conseille donc d'utiliser un Reset CSS plus précis, qui vise plus précisément les différents éléments HTML et leur applique les styles nécessaires, comme celui ci :<a title="reset css" href="https://meyerweb.com/eric/tools/css/reset/">Le reset css d'Eric Meyer</a>.</p>
+                <p>Reset CSS ont le mérite d'être suffisamment détaillées pour s'affranchir des points les plus problématiques. Cependant, c'est le principe même du Reset CSS qu'il convient de juger: est-ce une bonne chose d'annuler une grande partie des styles par défaut?</p>
+                <p>Pour éviter ce type de problème, la solution peut être d'utiliser non pas un Reset CSS, mais une feuille de styles de base. Cette dernière devra non pas annuler les styles par défaut des différents navigateurs, mais les harmoniser.</p>
+                <h2>Pseudo-classes</h2>
+                <p>Une pseudo-classe est un mot-clé qui peut être ajouté à un sélecteur afin d'indiquer l'état spécifique dans lequel l'élément doit être pour être ciblé par la déclaration. La pseudo-classe :hover, par exemple, permettra d'appliquer une mise en forme spécifique lorsque l'utilisateur survole l'élément ciblé par le sélecteur (voir liens pour plus de details).</p>
+                <h2>Pseudo-éléments</h2>
+                <p>Un pseudo-élément est un mot-clé ajouté à un sélecteur qui permet de mettre en forme certaines parties de l'élément ciblé par la règle. Ainsi, le pseudo-élément ::first-line permettra de ne cibler que la première ligne d'un élément visé par le sélecteur (voir liens pour plus de details).</p>
             </div>
             <div id="commonLinks">
                 <h2>Les liens.</h2>
@@ -54,6 +66,16 @@
                         <img alt="cara logo" src="imagesMomento/cssLogo.png" />
                         <h3><a title="autres propriétés css" href="http://www.efap-etudiants.org/proprietes-css/" target="_blank">autres propriétés css</a></h3>
                         <p>Site presentant de nombreuses propriétés css.</p>
+                    </div>
+                    <div class="linkDesign">
+                        <img alt="mdn logo" src="imagesMomento/mdn.png" />
+                        <h3><a title="pseudo classes" href="https://developer.mozilla.org/fr/docs/Web/CSS/Pseudo-classes" target="_blank">pseudo-classes</a></h3>
+                        <p>liens vers les pseudo-classes.</p>
+                    </div>
+                    <div class="linkDesign">
+                        <img alt="mdn logo" src="imagesMomento/mdn.png" />
+                        <h3><a title="pseudo elements" href=https://developer.mozilla.org/fr/docs/Web/CSS/Pseudo-%C3%A9l%C3%A9ments target="_blank">pseudo-elements</a></h3>
+                        <p>liens vers les pseudo-élements.</p>
                     </div>
                 </div>
             </div>
